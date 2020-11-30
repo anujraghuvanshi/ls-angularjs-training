@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angularjs Training</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script> -->
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+	 <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script> -->
+	  
+	<script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="appController as ctrl">
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="navbar-header">
+				<a class="navbar-brand">AngularUI Router Home</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a>Apply leave</a></li>
+				<li><a>All Leaves</a></li>
+			</ul>
+		</nav>
+		    <button ng-click="ctrl.get200()">Get 200</button>
+		    <button ng-click="ctrl.get404()">Get 404</button>
+		    <button ng-click="ctrl.get500()">Get 500</button>
+
+
+
+
+		     <div><b>Status</b>: {{ctrl.status}}</div>
+  			<div><b>Data</b>: {{ctrl.data}}</div>
+	</div>
+</body>
+</html>

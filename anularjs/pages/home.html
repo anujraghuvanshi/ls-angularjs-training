@@ -1,0 +1,47 @@
+<div class="jumbotron">
+
+	<h1>Angularjs Training!</h1>
+		
+	
+	<button class="btn btn-primary" ng-click="ctrl.navigate('apply-leave')">Apply Leave</button> &nbsp; &nbsp;
+	<button class="btn btn-primary" ng-click="ctrl.navigate('leaves-listing')">All Leaves</button> &nbsp; &nbsp;
+	<button class="btn btn-primary" ng-click="ctrl.navigate('skool')">School Route</button> &nbsp; &nbsp;
+	
+
+
+	<button class="btn btn-primary" ng-click="ctrl.setSessionStorage()">Set SessionStorage</button>
+	<br><br>
+	<button class="btn btn-primary" ng-click="ctrl.setLocalstorage()">Set LocalStorage</button>
+	<br><br>
+
+	<button class="btn btn-primary" ng-click="ctrl.setCookie()">Set Cookie</button>
+	<br><br>
+
+	<script type="text/ng-template" id="tpl.html">
+		<a> Here are your topics </a>
+		<br>
+		<pre>
+			Routes
+				- ui-route
+				- ui-state
+			Templates
+				- 3 Type 
+					- Normal 
+					- Template Cache 
+					- ngTemplate
+			Interceptors
+			Good To Have:
+				LocalStorage
+				Session Storage
+				Cookies
+				Sqllite DB
+		</pre>
+	</script>
+
+	<a ng-click="currentTpl='tpl.html'" id="tpl-link">Expand to get all topics</a>
+
+	<div id="tpl-content" ng-include src="currentTpl"></div>
+
+
+	
+</div>
